@@ -1,0 +1,193 @@
+/*navbar start*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Add this CSS to style the loader */
+
+
+.navbar {
+    background-color: #ffffff83;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: #06a0e8;
+}
+
+.navbar-brand:hover {
+    color: #000000;
+}
+
+.login-button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.login-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+
+
+}
+
+@media(min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+        transition: filter 1.5s ease-out;
+
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+        color: #fff;
+    }
+}
+
+.logo {
+    transition: filter 1.5s ease;
+}
+
+.logo:hover {
+    filter: brightness(1) invert(1);
+    /* Inverts the colors on hover */
+}
+
+/*main section start*/
+.Hero-section {
+    background: url('./mountains_look_real_and_add_black_color.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.Hero-section::before {
+    background-color: rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.Hero-section .container {
+    height: 100vh;
+    z-index: 100;
+    position: relative;
+}
+
+.Hero-section {
+    color: #fff;
+    float: left;
+    float: inline-end;
+}
+
+.Hero-section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.display-4 {
+    transition: filter 1.5s ease;
+    font-family: "Lora", serif;
+    font-size: 100px;
+    font-weight: 700px, bold;
+    font-style:normal;
+}
+.display-4:hover{
+    filter: brightness(1) invert(1);
+}
+.subtitle {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: 400px;
+        font-style: normal;
+      
+}
+.button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1.5s;
+    margin-right: 950px;
+    position: relative;
+}
+.button:hover{
+   background-color: #000000;
+   color: #ffffff;
+}
+a {
+      color: #575757;
+      text-decoration: none;
+      position: relative;
+    };
+a:hover{
+    background-color: #000000;
+   color: #ffffff;}
+a:hover {
+     color: white;
+   }
