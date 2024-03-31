@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Add this CSS to style the loader */
+
 
 
 .navbar {
@@ -12,6 +12,9 @@
     height: 80px;
     margin: 20px;
     border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.5rem;
 
 }
@@ -28,17 +31,17 @@
     color: #000000;
 }
 
-.login-button {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 15px;
-    padding: 8px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+
+.social {
+    list-style: none;
+    margin: 0 20px;
+    font-size: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+
+    font-size: 30px;
 }
 
 .nav-link {
@@ -47,13 +50,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     position: relative;
+
 }
 
-.login-button:hover {
-    background-color: #000000;
-    color: #ffffff;
-    
-}
 
 .navbar-toggler {
     border: none;
@@ -64,6 +63,7 @@
 .btn-close:focus {
     box-shadow: none;
     outline: none;
+
 }
 
 .navbar-toggler-icon {
@@ -110,7 +110,7 @@
 
 /*main section start*/
 .Hero-section {
-    background: url('./mountains_look_real_and_add_black_color.jpg');
+    background: url('./img/web.jpeg');
     background-size: cover;
     width: 100%;
 }
@@ -150,19 +150,43 @@
     font-family: "Lora", serif;
     font-size: 100px;
     font-weight: 700px, bold;
-    font-style:normal;
+    font-style: normal;
 }
-.display-4:hover{
+
+.display-4::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #ffffff71;
+    transform: scaleX(0);
+    transition: transform 1.5s ease;
+    z-index: -1;
+    transform-origin: left;
+}
+
+.display-4:hover {
+    color: #000000;
     filter: brightness(1) invert(1);
 }
-.subtitle {
-        font-family: "Raleway", sans-serif;
-        font-size: 20px;
-        font-weight: 400px;
-        font-style: normal;
-      
+
+.display-4:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
 }
-.button{
+
+.subtitle {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+    font-style: normal;
+
+}
+
+.button {
     background-color: #ffffff;
     color: #000000;
     font-size: 15px;
@@ -176,18 +200,25 @@
     margin-right: 950px;
     position: relative;
 }
-.button:hover{
-   background-color: #000000;
-   color: #ffffff;
-}
-a {
-      color: #575757;
-      text-decoration: none;
-      position: relative;
-    };
-a:hover{
+
+.button:hover {
     background-color: #000000;
-   color: #ffffff;}
+    color: #ffffff;
+}
+
+a {
+    color: #575757;
+    text-decoration: none;
+    position: relative;
+}
+
+;
+
 a:hover {
-     color: white;
-   }
+    background-color: #000000;
+    color: #ffffff;
+}
+
+a:hover {
+    color: white;
+}
