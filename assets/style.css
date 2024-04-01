@@ -290,7 +290,7 @@ a:hover {
 .pagewarp {
     position: relative;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
     text-transform: capitalize;
     font-family: "Audiowide", sans-serif;
     width: 100%;
@@ -313,6 +313,50 @@ a:hover {
     z-index: -1;
     width: 700%;
   }
+.skill {
+    text-shadow: none;
+    animation-duration: 1.5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.skill {
+    animation: text-animation 2s infinite alternate ease-in-out;
+}
+
+@keyframes text-animation {
+    0% {
+        letter-spacing: 0.1em;
+    }
+    100% {
+        letter-spacing: 0.5em;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.skill{
+
+    color: #e5ff00;
+
+}   
+.skill:hover{
+    color: #000000;
+    
+    border: #fff;
+    box-sizing: border-box;
+}
 .gallery {
     display: flex;
     flex-direction:row ;
@@ -352,5 +396,16 @@ a:hover {
 .item{
   padding: -50%;
     text-align: center;
+
+}
+.About{
+    height: 700px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    background-image: url(./img/crops.jpeg);
+}
+.About:hover{
+    color: #000000;
 
 }
